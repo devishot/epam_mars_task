@@ -47,6 +47,5 @@ module Mars
 
       self
     end
-
   end
 end
