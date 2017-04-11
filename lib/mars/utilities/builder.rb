@@ -11,7 +11,11 @@ module Mars
       end
 
       def set_size(point)
-        @plateau.size = point
+        if point[:x] < 0 || point[:y] < 0
+          puts "Upper-right coordinates can't be negative values"
+        else
+          @plateau.size = point
+        end
       end
 
       def add_rover(point, direction)
